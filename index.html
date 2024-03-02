@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base href=".">
+    <link rel="stylesheet" type="text/css" href="css/c.min.css">
+
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon"
+          href="res/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#151020">
+    <meta name="theme-color" content="#151020">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <meta name="prefers-color-scheme" content="light">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="" crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    <link rel="apple-touch-icon" sizes="57x57"
+          href="res/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"
+          href="res/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"
+          href="res/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+          href="res/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"
+          href="res/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+          href="res/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+          href="res/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+          href="res/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="res/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="res/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="res/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+          href="res/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="res/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/res/ms-icon-144x144.png">
+    <meta name="robots" content="index,follow">
+    <title>Watch QC alignment tool and QC checklist</title>
+    <meta property="og:title" content="Watch QC alignment tool">
+    <meta name="description" content="An online tool to check your watch QC - index alignment, SELs, bezel and more!">
+    <meta property="og:description"
+          content="An online tool to check your watch QC - index alignment, SELs, bezel and more!">
+    <meta name="keywords" content="qc,watch,reptime,check,alignment,index">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Watch QC alignment tool">
+    <meta property="og:image" content="res/logo.png">
+    <meta property="og:image:secure_url" content="res/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet" type="text/css">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity=""
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body oncontextmenu="return false;" data-new-gr-c-s-check-loaded="14.1157.0" data-gr-ext-installed="">
+
+<div id="header">
+    <h1><img src="res/logo.png" alt="Logo"> QC tool for watches</h1>
+</div>
+<div id="main">
+
+    <div id="toolbar-toggle"><i class="mi">brush</i><i class="mi close">clear</i></div>
+
+    <div id="toolbar">
+
+        <p>You can zoom rulers and QC image with your mousewheel, move them by dragging and remove rulers by
+            right-clicking them. Rotate your image by clicking and dragging rotate button on the right.</p>
+
+        <div class="add add-watch">
+            <i class="mi">watch</i>
+            <p>Add model ruler</p>
+        </div>
+        <div class="add add-indexruler">
+            <i class="mi">emergency</i>
+            <p>Index ruler</p>
+        </div>
+        <div class="add add-rulehorizontal">
+            <i class="mi">remove</i>
+            <p>Horizontal line</p>
+        </div>
+        <div class="add add-rulevertical">
+            <i class="mi">remove</i>
+            <p>Vertical line</p>
+        </div>
+        <div class="add add-img">
+            <i class="mi">image</i>
+            <p>Change QC</p>
+        </div>
+        <div class="add save">
+            <i class="mi">download</i>
+            <p>Save QC</p>
+        </div>
+
+        <h2>QC checklist:</h2>
+        <div class="qcc">
+            <div><i class="mi">done</i></div>
+            <p>Index alignment</p>
+        </div>
+        <div class="qcc">
+            <div><i class="mi">done</i></div>
+            <p>Dial printing</p>
+        </div>
+        <div class="qcc">
+            <div><i class="mi">done</i></div>
+            <p>Date Wheel</p>
+        </div>
+        <div class="qcc">
+            <div><i class="mi">done</i></div>
+            <p>Hand alignment</p>
+        </div>
+        <div class="qcc">
+            <div><i class="mi">done</i></div>
+            <p>Bezel</p>
+        </div>
+        <div class="qcc">
+            <div><i class="mi">done</i></div>
+            <p>Solid end links (SELs)</p>
+        </div>
+        <div class="qcc">
+            <div><i class="mi">done</i></div>
+            <p>Lume</p>
+        </div>
+
+        <div id="model-ruler-select">
+            <div class="close"><i class="mi">clear</i> Close</div>
+            <h2>Select your watch</h2>
+            <div class="brand">
+                <h3>Rolex</h3>
+                <div class="options">
+                    <div data-ruler="rolex/dj/dj41.svg" data-superpose="rolex/dj/dj41.png">
+                        <div class="name">DJ 41</div>
+                        <img src="res/rulers/models/rolex/dj/dj41.png" alt="DateJust 41">
+                    </div>
+                    <div data-ruler="rolex/sub/sub42-nd.svg" data-superpose="rolex/sub/sub42-nd.png">
+                        <div class="name">Sub 42mm</div>
+                        <img src="res/rulers/models/rolex/sub/sub42-nd.png" alt="Submariner 42">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="panel">
+        <div id="img-sel">
+
+
+            <label> <input type="file" alt="Upload QC photo" accept="image/*"> <i class="mi">add</i>
+                <strong>Click here to select your QC image</strong></label>
+
+            <div id="img">
+                <div id="img-rotate"><i class="mi">rotate_90_degrees_ccw</i></div>
+                <div id="img-el" class="ui-draggable ui-draggable-handle" style="position: relative;">
+                    <div></div>
+                </div>
+            </div>
+
+            <div id="img-rules"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+<script src="js/touchpunch.min.js"></script>
+<script src="js/html2canvas.min.js"></script>
+<script src="js/c.min.js"></script>
+
+
+
+</body>
+</html>
