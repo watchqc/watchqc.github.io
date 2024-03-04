@@ -542,11 +542,9 @@ body {
     transition: all 330ms cubic-bezier(.215, .61, .355, 1) 1ms;
     cursor: grab;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: 80%; /* Adjust this value to control the vertical position */
     right: 30px;
-    z-index: 9
+    z-index: 9;
 }
 
 #main.saving #img-rotate {

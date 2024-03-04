@@ -20,6 +20,18 @@ The changes I made were the following:
 * Added a small banner for the creator
 * Rearranged project files in subfolders
 
+## Changes based on user requests
+* Smoother rotate with the mouse
+* Rotate image with arrow keys
+* Pitch to zoom on mobile
+* Resolution issues when downloading image
+* Move rotate icon from the middle
+* Smoother Android touch move
+* Images now are loading to fit on the longer side
+* Rewritten minified JS code for better readability
+* Deferred JS scripts
+* Upgraded libraries
+
 ## Useful links
 * [Original announcement](https://www.reddit.com/r/RepTime/comments/zxasgc/new_qc_alignment_tool_i_have_made_for_you_all/)
 * [https://www.reddit.com/r/RepTime/](https://www.reddit.com/r/RepTime/)
