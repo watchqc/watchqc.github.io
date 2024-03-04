@@ -109,11 +109,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80px;
-    flex: 0 0 80px;
     width: 100%;
     border-bottom: solid 1px var(--brd);
-    padding: 0 20px;
+    padding: 10px;
     justify-content: center;
 }
 
